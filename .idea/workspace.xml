@@ -2,40 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63f0a01b-f40c-47ad-84db-f9745e0c00c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/libs/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/libs/variable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/public.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/search-form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/a1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/a2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/a3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/a4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/a5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/TweenMax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-2.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-2.2.4.min .js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/libs/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/libs/jquery.mobile.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/libs/modernizr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/libs/snap.svg-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/zturn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitdata/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitdata/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitdata/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitdata/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,34 +65,36 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="43" />
-          <entry key="html" value="538" />
-          <entry key="py" value="158" />
-          <entry key="txt" value="26" />
+          <entry key="html" value="616" />
+          <entry key="py" value="818" />
+          <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="43" />
-          <entry key="HTML" value="538" />
-          <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Python" value="158" />
+          <entry key="HTML" value="616" />
+          <entry key="PLAIN_TEXT" value="46" />
+          <entry key="Python" value="818" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="7" />
           <entry key="git" value="1" />
-          <entry key="html" value="4" />
+          <entry key="html" value="5" />
           <entry key="js" value="7" />
-          <entry key="py" value="8" />
+          <entry key="py" value="17" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="4" />
+          <entry key="HTML" value="5" />
           <entry key="JavaScript" value="7" />
-          <entry key="Python" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="17" />
           <entry key="UNKNOWN" value="1" />
         </counts>
       </usages-collector>
@@ -130,19 +105,59 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/search-form.css">
+        <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="435">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <folding>
+                <element signature="e#631#663#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/gitdata/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+            <state relative-caret-position="575">
+              <caret line="129" column="1" selection-start-line="129" selection-start-column="1" selection-end-line="129" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/upload.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dynamic/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1542534774575" expanded="true" signature="218:219" ph="..." />
+                <marker date="1542534774575" expanded="true" signature="218:223" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dynamic/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+                <marker date="1542532530779" expanded="true" signature="309:314" ph="..." />
+                <marker date="1542532530779" expanded="true" signature="583:584" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,17 +181,13 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="5431" column="9" selection-start-line="5431" selection-start-column="9" selection-end-line="5431" selection-end-column="9" />
+            <state relative-caret-position="266">
+              <caret line="4763" column="14" selection-start-line="4763" selection-start-column="14" selection-end-line="4763" selection-end-column="14" />
               <folding>
                 <element signature="e#86035#86182#2#HTML" expanded="true" />
-                <element signature="e#112589#112608#1#HTML" expanded="true" />
-                <element signature="e#120159#120446#1#HTML" expanded="true" />
-                <element signature="e#124077#124096#1#HTML" expanded="true" />
-                <element signature="e#124913#125204#2#HTML" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -226,16 +237,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/zturn.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -263,13 +264,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/gitdata/__init__.py" />
-        <option value="$PROJECT_DIR$/gitdata/settings.py" />
-        <option value="$PROJECT_DIR$/gitdata/urls.py" />
-        <option value="$PROJECT_DIR$/dynamic/views.py" />
         <option value="$PROJECT_DIR$/static/css/search-form.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/templates/search.html" />
+        <option value="$PROJECT_DIR$/dynamic/models.py" />
+        <option value="$PROJECT_DIR$/gitdata/settings.py" />
+        <option value="$PROJECT_DIR$/media/a.txt" />
+        <option value="$PROJECT_DIR$/gitdata/urls.py" />
+        <option value="$PROJECT_DIR$/templates/upload.html" />
+        <option value="$PROJECT_DIR$/dynamic/views.py" />
       </list>
     </option>
   </component>
@@ -312,25 +316,18 @@
             <path>
               <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitdata" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gitdata" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="excels" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitdata" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gitdata" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gitdata" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
@@ -356,11 +353,11 @@
       <recent name="https://gitee.com/computer_1600716009/Python01_704XD.git" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static/css" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/images" />
-      <recent name="$PROJECT_DIR$/media/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -437,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542119358577</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="首页+搜索页update前端">
+      <created>1542531077367</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542531077367</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -453,7 +457,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23801917" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35782748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -511,7 +515,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="databases set" />
     <MESSAGE value="设置静态资源文件，首页待做" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置静态资源文件，首页待做" />
+    <MESSAGE value="首页+搜索页update前端" />
+    <option name="LAST_COMMIT_MESSAGE" value="首页+搜索页update前端" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/venv/Lib/site-packages/django/db/models/base.py" />
@@ -554,36 +559,8 @@
     <entry file="https://gitee.com/computer_1600716009/Python01_704XD.git">
       <provider selected="true" editor-type-id="httpFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gitdata/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gitdata/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <marker date="1542112332860" expanded="true" signature="89:90" ph="..." />
-            <marker date="1542112332860" expanded="true" signature="89:94" ph="..." />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/urls/conf.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -643,14 +620,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="5431" column="9" selection-start-line="5431" selection-start-column="9" selection-end-line="5431" selection-end-column="9" />
+        <state relative-caret-position="266">
+          <caret line="4763" column="14" selection-start-line="4763" selection-start-column="14" selection-end-line="4763" selection-end-column="14" />
           <folding>
             <element signature="e#86035#86182#2#HTML" expanded="true" />
-            <element signature="e#112589#112608#1#HTML" expanded="true" />
-            <element signature="e#120159#120446#1#HTML" expanded="true" />
-            <element signature="e#124077#124096#1#HTML" expanded="true" />
-            <element signature="e#124913#125204#2#HTML" expanded="true" />
             <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -695,6 +668,82 @@
             <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#209391#209395#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/a.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <marker date="1542532530779" expanded="true" signature="309:314" ph="..." />
+            <marker date="1542532530779" expanded="true" signature="583:584" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitdata/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="129" column="1" selection-start-line="129" selection-start-column="1" selection-end-line="129" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="752" selection-start-line="752" selection-end-line="752" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/462528324/_md5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/base64.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="549" column="4" selection-start-line="549" selection-start-column="4" selection-end-line="549" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1542534774575" expanded="true" signature="218:219" ph="..." />
+            <marker date="1542534774575" expanded="true" signature="218:223" ph="..." />
           </folding>
         </state>
       </provider>
