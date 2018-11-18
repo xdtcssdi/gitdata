@@ -1,65 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>数据动态可视化网站</title>
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="/static/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>炫酷jQuery和SVG遮罩轮播图特效</title>
+
+	<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+<link rel="stylesheet" type="text/css" href="/static/css/search-form.css">
+	<!--必要样式-->
+
+<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<link rel="stylesheet" href="/static/css/slider.css">
+	<link rel="stylesheet" href="/static/css/main.css">\
 </head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">GitData</a>
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.clear {
+    clear: both;
+}
+.menus {
+    width: 750px;
+    margin: 40px auto;
+}
+.menus ul {
+    width: 750px;
+    border-bottom: 2px solid #009FE9;
+    position: relative;
+    float: left;
+}
+.menus li {
+    float: left;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+}
+.menus li:nth-child(2) {
+    color: #fff;
+}
+.menus li span{
+    font-size: larger;
+}
+.menus .bg {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: all 0.5s;
+       -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+            transition: all 0.5s;
+}
+
+.tab {
+    width: 750px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 500px;
+    text-align: center;
+    color: #888;
+    font-weight: bold;
+    display: none;
+}
+.show {
+    display: block;
+}
+
+
+</style>
+<body style="margin:0">
+
+ <div class="menus menus0">
+        <ul>
+            <div class="bg"></div>
+            <li><span>首页</span></li>
+            <li><span>排行</span></li>
+            <li><span>话题</span></li>
+            <li><span>市场</span></li>
+            <li><span>个人</span></li>
+        </ul>
+
+<div class="clear"></div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+
+         <div class="container">
+            <form onsubmit="submitFn(this, event);" >
+                <div class="search-wrapper active">
+                    <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="Type to search" />
+                        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                    </div>
+
+                    <div class="result-container">
+
+                    </div>
+                </div>
+            </form>
+         </div>
+
+
+	<div class="portfolio slider-wrapper" style="margin: 0">
+	    <ul class="slider" data-step1="M1402,800h-2V0h1c0.6,0,1,0.4,1,1V800z"
+            data-step2="M1400,800H379L771.2,0H1399c0.6,0,1,0.4,1,1V800z" data-step3="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"
+            data-step4="M-2,800h2V0h-1c-0.6,0-1,0.4-1,1V800z" data-step5="M0,800h1021L628.8,0L1,0C0.4,0,0,0.4,0,1L0,800z"
+            data-step6="M0,800h1400V0L1,0C0.4,0,0,0.4,0,1L0,800z">
+
+	        <li class="visible">
+	            <div class="svg-wrapper">
+	                <svg viewBox="0 0 1400 800">
+	                    <defs>
+	                        <clipPath id="image-1">
+	                            <path id="changing-path-1" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+	                        </clipPath>
+	                    </defs>
+	                    <image height='100%' width="100%" clip-path="url(#image-1)" href="/static/images/1.png"></image>
+	                    <div class="slider__info">
+	                        <p class="slider__title text">
+	                            <span class="text__first">
+	                                <span class="text__word">Karbokam</span>
+	                                <span class="text__first-bg" style="background-color: #3A7E94"></span>
+	                            </span>
+	                        </p>
+	                        <p class="slider__desc text">
+	                            <span class="text__second">
+	                                <span class="text__word">Production of technical carboxymethyl cellulose <br> (CMC) and polyanionic cellulose (PAC)</span>
+	                                <span class="text__second-bg" style="background-color: #E688A1"></span>
+	                            </span>
+	                        </p>
+	                    </div>
+	                    <div class="slider__link cd-slider-navigation">
+	                        <a href="#0" class="next-slide slider__site text">
+	                            <span class="text__first">
+	                                <span class="text__word">Visit karbokam.ru <img class="arrow" src="/static/images/arrow.svg" alt=""></span>
+	                                <span class="text__first-bg" style="background-color: #3A7E94"></span>
+	                            </span>
+	                        </a>
+	                        <p class="slider__visit text">
+	                            <span class="text__second">
+	                                <span class="text__word">Official website</span>
+	                                <span class="text__second-bg" style="background-color: #E688A1"></span>
+	                            </span>
+	                        </p>
+	                    </div>
+	                </svg>
+	            </div> <!-- .svg-wrapper -->
+	        </li>
+
+	        <li>
+	            <div class="svg-wrapper">
+	                <svg viewBox="0 0 1400 800">
+	                    <defs>
+	                        <clipPath id="image-2">
+	                            <path id="changing-path-2" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+	                        </clipPath>
+	                    </defs>
+	                    <image height='100%' width="100%" clip-path="url(#image-2)" href="/static/images/2.png"></image>
+
+	                    <div class="slider__info">
+	                        <p class="slider__title text">
+	                            <span class="text__first">
+	                                <span class="text__word">UAZ KD</span>
+	                                <span class="text__first-bg" style="background-color: #535986"></span>
+	                            </span>
+	                        </p>
+	                        <p class="slider__desc text">
+	                            <span class="text__second">
+	                                <span class="text__word">Authorized distributor of UAZ (Ulyanovsk Automobile <br> Plant)</span>
+	                                <span class="text__second-bg" style="background-color: #DABDB2"></span>
+	                            </span>
+	                        </p>
+
+	                    </div>
+	                    <div class="slider__link cd-slider-navigation">
+	                        <a href="#0" class="next-slide slider__site text">
+	                            <span class="text__first">
+	                                <span class="text__word">Visit uaz159.ru<img class="arrow" src="/static/images/arrow.svg" alt=""></span>
+	                                <span class="text__first-bg" style="background-color: #535986"></span>
+	                            </span>
+	                        </a>
+	                        <p class="slider__visit text">
+	                            <span class="text__second">
+	                                <span class="text__word">Official website</span>
+	                                <span class="text__second-bg" style="background-color: #DABDB2"></span>
+	                            </span>
+	                        </p>
+	                    </div>
+	                </svg>
+
+	            </div> <!-- .svg-wrapper -->
+	        </li>
+
+	        <li>
+	            <div class="svg-wrapper">
+	                <svg viewBox="0 0 1400 800">
+	                    <defs>
+	                        <clipPath id="image-3">
+	                            <path id="changing-path-3" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+	                        </clipPath>
+	                    </defs>
+	                    <image height='100%' width="100%" clip-path="url(#image-3)" href="/static/images/3.png"></image>
+
+	                    <div class="slider__info">
+	                        <p class="slider__title text">
+	                            <span class="text__first">
+	                                <span class="text__word">Karbokam</span>
+	                                <span class="text__first-bg" style="background-color: #1ABDFE"></span>
+	                            </span>
+	                        </p>
+	                        <p class="slider__desc text">
+	                            <span class="text__second">
+	                                <span class="text__word">Production of technical carboxymethyl cellulose <br> (CMC) and polyanionic cellulose (PAC)</span>
+	                                <span class="text__second-bg" style="background-color: #CB1537"></span>
+	                            </span>
+	                        </p>
+	                    </div>
+	                    <div class="slider__link cd-slider-navigation">
+	                        <a href="#0" class="next-slide slider__site text">
+	                            <span class="text__first">
+	                                <span class="text__word">Visit karbokam.ru <img class="arrow" src="/static/images/arrow.svg" alt=""></span>
+	                                <span class="text__first-bg" style="background-color: #1ABDFE"></span>
+	                            </span>
+	                        </a>
+	                        <p class="slider__visit text">
+	                            <span class="text__second">
+	                                <span class="text__word">Official website</span>
+	                                <span class="text__second-bg" style="background-color: #CB1537"></span>
+	                            </span>
+	                        </p>
+	                    </div>
+	                </svg>
+
+	            </div> <!-- .svg-wrapper -->
+	        </li>
+
+	    </ul> <!-- .slider -->
+
+	    <ol class="slider-controls">
+	          <li class="selected"><a href="#0"><em>Item 1</em></a></li>
+	        <li><a href="#0"><em>Item 2</em></a></li>
+	        <li><a href="#0"><em>Item 2</em></a></li>
+	      <!-- other list items here -->
+	   </ol> <!-- .slider-controls -->
+	</div>
+
+
 
 </body>
+
+
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="/static/js/libs/jquery.mobile.custom.min.js" type="text/javascript"></script>
+	<script src="/static/js/libs/snap.svg-min.js" type="text/javascript"></script>
+	<script src="/static/js/libs/bootstrap.min.js" type="text/javascript"></script>
+	<script src='/static/js/TweenMax.min.js' type="text/javascript"></script>
+	<script src="/static/js/slider.js" type="text/javascript"></script>
+
+	<script src="/static/js/index.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+        function searchToggle(obj, evt){
+            var container = $(obj).closest('.search-wrapper');
+
+            if(!container.hasClass('active')){
+                  container.addClass('active');
+                  evt.preventDefault();
+            }
+            else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                  container.removeClass('active');
+                  // clear input
+                  container.find('.search-input').val('');
+                  // clear and hide result container when we press close
+                  container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+            }
+        }
+
+        function submitFn(obj, evt){
+
+            //todo:
+        }
+    </script>
+
 </html>

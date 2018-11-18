@@ -2,27 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63f0a01b-f40c-47ad-84db-f9745e0c00c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/libs/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/libs/variable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/public.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/search-form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/icomoon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/a1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/a2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/a4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/a5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/TweenMax.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-2.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-2.2.4.min .js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/libs/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/libs/jquery.mobile.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/libs/modernizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/libs/snap.svg-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/zturn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitdata/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitdata/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitdata/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitdata/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,40 +82,43 @@
     <session id="1046520644">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="11" />
+          <entry key="css" value="43" />
+          <entry key="html" value="538" />
           <entry key="py" value="158" />
-          <entry key="txt" value="13" />
+          <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="11" />
-          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="CSS" value="43" />
+          <entry key="HTML" value="538" />
+          <entry key="PLAIN_TEXT" value="26" />
           <entry key="Python" value="158" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
+          <entry key="css" value="7" />
           <entry key="git" value="1" />
-          <entry key="html" value="2" />
-          <entry key="js" value="1" />
+          <entry key="html" value="4" />
+          <entry key="js" value="7" />
           <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="1" />
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="4" />
+          <entry key="JavaScript" value="7" />
           <entry key="Python" value="8" />
           <entry key="UNKNOWN" value="1" />
         </counts>
@@ -114,60 +130,110 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
+        <entry file="file://$PROJECT_DIR$/static/css/search-form.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#631#663#0" expanded="true" />
-              </folding>
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gitdata/settings.py">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state relative-caret-position="253">
+              <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gitdata/wsgi.py">
+        <entry file="file://$PROJECT_DIR$/static/css/demo.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic/views.py">
+        <entry file="file://$PROJECT_DIR$/static/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-              <folding>
-                <marker date="1542112332860" expanded="true" signature="89:90" ph="..." />
-                <marker date="1542112332860" expanded="true" signature="89:94" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/urls/conf.py">
+        <entry file="file://$PROJECT_DIR$/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="354">
+              <caret line="5431" column="9" selection-start-line="5431" selection-start-column="9" selection-end-line="5431" selection-end-column="9" />
+              <folding>
+                <element signature="e#86035#86182#2#HTML" expanded="true" />
+                <element signature="e#112589#112608#1#HTML" expanded="true" />
+                <element signature="e#120159#120446#1#HTML" expanded="true" />
+                <element signature="e#124077#124096#1#HTML" expanded="true" />
+                <element signature="e#124913#125204#2#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#3;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#172500#172506#0#HTML" expanded="true" />
+                <element signature="e#172507#172513#0#HTML" expanded="true" />
+                <element signature="e#172609#172614#0#HTML" expanded="true" />
+                <element signature="e#172618#172623#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#172998#173004#0#HTML" expanded="true" />
+                <element signature="e#173478#173484#0#HTML" expanded="true" />
+                <element signature="e#173485#173491#0#HTML" expanded="true" />
+                <element signature="n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#176046#176052#0#HTML" expanded="true" />
+                <element signature="e#176533#176539#0#HTML" expanded="true" />
+                <element signature="e#176540#176546#0#HTML" expanded="true" />
+                <element signature="n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#177940#177946#0#HTML" expanded="true" />
+                <element signature="e#177974#177980#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#178871#178877#0#HTML" expanded="true" />
+                <element signature="e#178878#178884#0#HTML" expanded="true" />
+                <element signature="e#178902#178908#0#HTML" expanded="true" />
+                <element signature="e#178936#178942#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#179486#179492#0#HTML" expanded="true" />
+                <element signature="e#180058#180064#0#HTML" expanded="true" />
+                <element signature="e#180065#180071#0#HTML" expanded="true" />
+                <element signature="n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#182383#182389#0#HTML" expanded="true" />
+                <element signature="e#182390#182396#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#182898#182904#0#HTML" expanded="true" />
+                <element signature="e#183394#183400#0#HTML" expanded="true" />
+                <element signature="e#183401#183407#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#209391#209395#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/zturn.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -179,6 +245,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>img</find>
+      <find>search-icon</find>
+      <find>content_left</find>
+      <find>#fff</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>#333333</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -189,7 +266,10 @@
         <option value="$PROJECT_DIR$/gitdata/settings.py" />
         <option value="$PROJECT_DIR$/gitdata/urls.py" />
         <option value="$PROJECT_DIR$/dynamic/views.py" />
+        <option value="$PROJECT_DIR$/static/css/search-form.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/index.css" />
+        <option value="$PROJECT_DIR$/templates/search.html" />
       </list>
     </option>
   </component>
@@ -199,9 +279,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="954" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="621" />
+    <option name="y" value="201" />
+    <option name="width" value="1850" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -242,8 +324,13 @@
               <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitdata" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-theme.css" type="620a8d5e:NestingTreeNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gitdata" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
@@ -265,17 +352,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/dynamic" />
-    </key>
     <key name="OPEN_URL_DIALOG">
       <recent name="https://gitee.com/computer_1600716009/Python01_704XD.git" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/media/js" />
-      <recent name="$PROJECT_DIR$/media" />
-      <recent name="$PROJECT_DIR$/media/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/dynamic" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -334,7 +423,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541943357433</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="设置静态资源文件，首页待做">
+      <created>1542118932499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542118932499</updated>
+    </task>
+    <task id="LOCAL-00003" summary="设置静态资源文件，首页待做">
+      <created>1542119358577</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542119358577</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -347,21 +450,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23588924" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23801917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32871288" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.280198" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32919255" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32970297" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.28613862" />
@@ -376,12 +479,39 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="databases set" />
-    <option name="LAST_COMMIT_MESSAGE" value="databases set" />
+    <MESSAGE value="设置静态资源文件，首页待做" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置静态资源文件，首页待做" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/venv/Lib/site-packages/django/db/models/base.py" />
@@ -407,16 +537,6 @@
     <entry file="file://$PROJECT_DIR$/static/css/bootstrap-theme.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/urls/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gitdata/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/conf/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -431,6 +551,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="https://gitee.com/computer_1600716009/Python01_704XD.git">
+      <provider selected="true" editor-type-id="httpFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitdata/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gitdata/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -442,30 +585,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gitdata/settings.py">
+    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/urls/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="975">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/js/jquery-2.2.4.min .js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery-2.1.1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/TweenMax.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="240">
+          <caret line="16" column="6724" selection-start-line="16" selection-start-column="6724" selection-end-line="16" selection-end-column="6724" />
           <folding>
-            <element signature="e#631#663#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="https://gitee.com/computer_1600716009/Python01_704XD.git">
-      <provider selected="true" editor-type-id="httpFileEditor" />
+    <entry file="file://$PROJECT_DIR$/static/css/search-form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="253">
+          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/zturn.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/demo.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="5431" column="9" selection-start-line="5431" selection-start-column="9" selection-end-line="5431" selection-end-column="9" />
+          <folding>
+            <element signature="e#86035#86182#2#HTML" expanded="true" />
+            <element signature="e#112589#112608#1#HTML" expanded="true" />
+            <element signature="e#120159#120446#1#HTML" expanded="true" />
+            <element signature="e#124077#124096#1#HTML" expanded="true" />
+            <element signature="e#124913#125204#2#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#172500#172506#0#HTML" expanded="true" />
+            <element signature="e#172507#172513#0#HTML" expanded="true" />
+            <element signature="e#172609#172614#0#HTML" expanded="true" />
+            <element signature="e#172618#172623#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#172998#173004#0#HTML" expanded="true" />
+            <element signature="e#173478#173484#0#HTML" expanded="true" />
+            <element signature="e#173485#173491#0#HTML" expanded="true" />
+            <element signature="n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#176046#176052#0#HTML" expanded="true" />
+            <element signature="e#176533#176539#0#HTML" expanded="true" />
+            <element signature="e#176540#176546#0#HTML" expanded="true" />
+            <element signature="n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#177940#177946#0#HTML" expanded="true" />
+            <element signature="e#177974#177980#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#178871#178877#0#HTML" expanded="true" />
+            <element signature="e#178878#178884#0#HTML" expanded="true" />
+            <element signature="e#178902#178908#0#HTML" expanded="true" />
+            <element signature="e#178936#178942#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#179486#179492#0#HTML" expanded="true" />
+            <element signature="e#180058#180064#0#HTML" expanded="true" />
+            <element signature="e#180065#180071#0#HTML" expanded="true" />
+            <element signature="n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#182383#182389#0#HTML" expanded="true" />
+            <element signature="e#182390#182396#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#182898#182904#0#HTML" expanded="true" />
+            <element signature="e#183394#183400#0#HTML" expanded="true" />
+            <element signature="e#183401#183407#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#209391#209395#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
