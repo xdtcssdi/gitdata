@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="/static/js/jquery-2.2.4.min%20.js"></script>
+
+<script>
+
+    var url = "http://127.0.0.1:8000/media/excels/example.csv";
+	 var htmlobj= $.ajax({url:url,async:false});
+	 var dataString = htmlobj.responseText;
+
+	 document.write(dataString);
+</script>
+<body>
+
+</body>
+</html>

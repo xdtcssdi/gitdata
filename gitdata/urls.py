@@ -27,6 +27,8 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
     url('^$', views.index),
+    url('test/', views.test),
     url('upload/', views.upload),
+    url('show/', views.show),
     url(r'^media/(?P<path>.*)$',serve, {'document_root': settings.MEDIA_ROOT})
 ]

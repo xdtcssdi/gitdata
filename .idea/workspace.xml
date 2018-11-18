@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63f0a01b-f40c-47ad-84db-f9745e0c00c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/excels/example.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/visual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bargraph.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dynamic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitdata/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitdata/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gitdata/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gitdata/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,46 +57,50 @@
     <session id="1046520644">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="43" />
-          <entry key="html" value="616" />
-          <entry key="py" value="818" />
-          <entry key="txt" value="46" />
+          <entry key="html" value="900" />
+          <entry key="js" value="25" />
+          <entry key="py" value="962" />
+          <entry key="txt" value="80" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="43" />
-          <entry key="HTML" value="616" />
-          <entry key="PLAIN_TEXT" value="46" />
-          <entry key="Python" value="818" />
+          <entry key="HTML" value="900" />
+          <entry key="JavaScript" value="25" />
+          <entry key="PLAIN_TEXT" value="80" />
+          <entry key="Python" value="962" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="7" />
+          <entry key="css" value="8" />
+          <entry key="csv" value="7" />
           <entry key="git" value="1" />
-          <entry key="html" value="5" />
-          <entry key="js" value="7" />
-          <entry key="py" value="17" />
+          <entry key="html" value="8" />
+          <entry key="js" value="10" />
+          <entry key="py" value="18" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="7" />
-          <entry key="HTML" value="5" />
-          <entry key="JavaScript" value="7" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="17" />
+          <entry key="CSS" value="8" />
+          <entry key="HTML" value="8" />
+          <entry key="JavaScript" value="10" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="18" />
           <entry key="UNKNOWN" value="1" />
         </counts>
       </usages-collector>
@@ -107,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state>
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#631#663#0" expanded="true" />
               </folding>
@@ -116,123 +122,77 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gitdata/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="129" column="1" selection-start-line="129" selection-start-column="1" selection-end-line="129" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dynamic/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="515">
+              <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1542534774575" expanded="true" signature="218:219" ph="..." />
-                <marker date="1542534774575" expanded="true" signature="218:223" ph="..." />
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1542541046019" expanded="true" signature="204:205" ph="..." />
+                <marker date="1542541046019" expanded="true" signature="204:209" ph="..." />
+                <marker date="1542541046019" expanded="true" signature="832:833" ph="..." />
+                <marker date="1542541046019" expanded="true" signature="947:952" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic/models.py">
+        <entry file="file://$PROJECT_DIR$/static/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-                <marker date="1542532530779" expanded="true" signature="309:314" ph="..." />
-                <marker date="1542532530779" expanded="true" signature="583:584" ph="..." />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/demo.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/index.css">
+        <entry file="file://$PROJECT_DIR$/static/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/main.css">
+        <entry file="file://$PROJECT_DIR$/static/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/visual.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="71445">
               <caret line="4763" column="14" selection-start-line="4763" selection-start-column="14" selection-end-line="4763" selection-end-column="14" />
-              <folding>
-                <element signature="e#86035#86182#2#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#3;n#head#0;n#html#0;n#!!top" />
-                <element signature="e#172500#172506#0#HTML" expanded="true" />
-                <element signature="e#172507#172513#0#HTML" expanded="true" />
-                <element signature="e#172609#172614#0#HTML" expanded="true" />
-                <element signature="e#172618#172623#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#172998#173004#0#HTML" expanded="true" />
-                <element signature="e#173478#173484#0#HTML" expanded="true" />
-                <element signature="e#173485#173491#0#HTML" expanded="true" />
-                <element signature="n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#176046#176052#0#HTML" expanded="true" />
-                <element signature="e#176533#176539#0#HTML" expanded="true" />
-                <element signature="e#176540#176546#0#HTML" expanded="true" />
-                <element signature="n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" />
-                <element signature="e#177940#177946#0#HTML" expanded="true" />
-                <element signature="e#177974#177980#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#178871#178877#0#HTML" expanded="true" />
-                <element signature="e#178878#178884#0#HTML" expanded="true" />
-                <element signature="e#178902#178908#0#HTML" expanded="true" />
-                <element signature="e#178936#178942#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#179486#179492#0#HTML" expanded="true" />
-                <element signature="e#180058#180064#0#HTML" expanded="true" />
-                <element signature="e#180065#180071#0#HTML" expanded="true" />
-                <element signature="n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#182383#182389#0#HTML" expanded="true" />
-                <element signature="e#182390#182396#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#182898#182904#0#HTML" expanded="true" />
-                <element signature="e#183394#183400#0#HTML" expanded="true" />
-                <element signature="e#183401#183407#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#209391#209395#0#HTML" expanded="true" />
-              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/bargraph.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -271,8 +231,13 @@
         <option value="$PROJECT_DIR$/dynamic/models.py" />
         <option value="$PROJECT_DIR$/gitdata/settings.py" />
         <option value="$PROJECT_DIR$/media/a.txt" />
-        <option value="$PROJECT_DIR$/gitdata/urls.py" />
         <option value="$PROJECT_DIR$/templates/upload.html" />
+        <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/templates/test.html" />
+        <option value="$PROJECT_DIR$/gitdata/urls.py" />
+        <option value="$PROJECT_DIR$/static/js/visual.js" />
+        <option value="$PROJECT_DIR$/static/js/config.js" />
+        <option value="$PROJECT_DIR$/templates/bargraph.html" />
         <option value="$PROJECT_DIR$/dynamic/views.py" />
       </list>
     </option>
@@ -332,6 +297,18 @@
             <path>
               <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitdata" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gitdata" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gitdata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gitdata" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -352,16 +329,16 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://gitee.com/computer_1600716009/Python01_704XD.git" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/media" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/static/css" />
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/static/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/dynamic" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media/excels" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/media" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -441,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542531077367</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Upload file is okey !!">
+      <created>1542534851821</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542534851821</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -457,11 +441,11 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35782748" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36155483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.280198" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -516,7 +500,8 @@
     <MESSAGE value="databases set" />
     <MESSAGE value="设置静态资源文件，首页待做" />
     <MESSAGE value="首页+搜索页update前端" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页+搜索页update前端" />
+    <MESSAGE value="Upload file is okey !!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload file is okey !!" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/venv/Lib/site-packages/django/db/models/base.py" />
@@ -599,9 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/zturn.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -615,60 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="4763" column="14" selection-start-line="4763" selection-start-column="14" selection-end-line="4763" selection-end-column="14" />
-          <folding>
-            <element signature="e#86035#86182#2#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#3;n#head#0;n#html#0;n#!!top" />
-            <element signature="e#172500#172506#0#HTML" expanded="true" />
-            <element signature="e#172507#172513#0#HTML" expanded="true" />
-            <element signature="e#172609#172614#0#HTML" expanded="true" />
-            <element signature="e#172618#172623#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#172998#173004#0#HTML" expanded="true" />
-            <element signature="e#173478#173484#0#HTML" expanded="true" />
-            <element signature="e#173485#173491#0#HTML" expanded="true" />
-            <element signature="n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#176046#176052#0#HTML" expanded="true" />
-            <element signature="e#176533#176539#0#HTML" expanded="true" />
-            <element signature="e#176540#176546#0#HTML" expanded="true" />
-            <element signature="n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" />
-            <element signature="e#177940#177946#0#HTML" expanded="true" />
-            <element signature="e#177974#177980#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#178871#178877#0#HTML" expanded="true" />
-            <element signature="e#178878#178884#0#HTML" expanded="true" />
-            <element signature="e#178902#178908#0#HTML" expanded="true" />
-            <element signature="e#178936#178942#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#179486#179492#0#HTML" expanded="true" />
-            <element signature="e#180058#180064#0#HTML" expanded="true" />
-            <element signature="e#180065#180071#0#HTML" expanded="true" />
-            <element signature="n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#182383#182389#0#HTML" expanded="true" />
-            <element signature="e#182390#182396#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#3;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#182898#182904#0#HTML" expanded="true" />
-            <element signature="e#183394#183400#0#HTML" expanded="true" />
-            <element signature="e#183401#183407#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#209391#209395#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -687,16 +615,6 @@
             <element signature="e#0#51#0" expanded="true" />
             <marker date="1542532530779" expanded="true" signature="309:314" ph="..." />
             <marker date="1542532530779" expanded="true" signature="583:584" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -736,14 +654,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gitdata/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/visual.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71445">
+          <caret line="4763" column="14" selection-start-line="4763" selection-start-column="14" selection-end-line="4763" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/excels/example.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bargraph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="515">
+          <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1542534774575" expanded="true" signature="218:219" ph="..." />
-            <marker date="1542534774575" expanded="true" signature="218:223" ph="..." />
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1542541046019" expanded="true" signature="204:205" ph="..." />
+            <marker date="1542541046019" expanded="true" signature="204:209" ph="..." />
+            <marker date="1542541046019" expanded="true" signature="832:833" ph="..." />
+            <marker date="1542541046019" expanded="true" signature="947:952" ph="..." />
           </folding>
         </state>
       </provider>

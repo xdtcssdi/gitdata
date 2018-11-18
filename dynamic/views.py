@@ -1,7 +1,6 @@
-import base64
+import hashlib
 import os
 import time
-import hashlib
 
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -27,7 +26,7 @@ def upload(request):
 
         tt = hashlib.md5(data.encode(encoding='UTF-8')).hexdigest()
 
-        name = str(tt)[:20]+'.'+obj.name.split('.')[-1]
+        name = str(tt)[:20] + '.' + obj.name.split('.')[-1]
 
         f = open(os.path.join(BASE_DIR, 'media', 'excels', name), 'wb')
 
@@ -38,3 +37,15 @@ def upload(request):
         return HttpResponse('OK')
 
     return render(request, 'upload.html')
+
+
+def test(req):
+    return render(req, "test.html")
+
+
+def show(req):
+    f = "\"http://127.0.0.1:8000/media/excels/example.csv\""
+
+    return render(req, "bargraph.html", context={
+        "data": f
+    })
