@@ -13,22 +13,20 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+import xadmin
 from django.conf.urls import url
-from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import path
 from django.views.static import serve
 
 from dynamic import views
-import xadmin
-
 from gitdata import settings
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
-    url('^$', views.index),
-    url('test/', views.test),
+    url('^$', views.index, name='index'),
     url('upload/', views.upload),
     url('show/', views.show),
-    url(r'^media/(?P<path>.*)$',serve, {'document_root': settings.MEDIA_ROOT})
+    url('list/', views.show_list, name='list'),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
 ]

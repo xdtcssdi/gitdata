@@ -1,0 +1,145 @@
+{% extends 'head.html' %}
+
+{% block title %}
+    项目列表
+{% endblock %}
+{% block css %}
+    <link crossorigin="anonymous" media="all"
+          integrity="sha512-lLo2nlsdl+bHLu6PGvC2j3wfP45RnK4wKQLiPnCDcuXfU38AiD+JCdMywnF3WbJC1jaxe3lAI6AM4uJuMFBLEw=="
+          rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-08fc49d3bd2694c870ea23d0906f3610.css"/>
+    <link crossorigin="anonymous" media="all"
+          integrity="sha512-mv6mDRPrioZTM6DqvWmoRTqzLBRhHXVLHuh4NbZvbWLfjVpC7gqihEHCfY+IR3fRoQ3KD7FLLz422a7iH/HT/g=="
+          rel="stylesheet" href="https://assets-cdn.github.com/assets/github-4d9ab9919c1f80062f9616df3655449f.css"/>
+
+
+{% endblock %}
+{% block js %}
+    <script>
+
+
+        $(function () {
+            //无点击效果
+            $('.menus li').eq(1).css('color', '#ff4941');
+            $('.menus li').each(function () {
+                $('.menus li').mouseover(function () {
+                    var index = $(this).index();
+                    $('.menus .bg').css('left', (index - 1) * 150 + 'px');
+                    $('.menus li').css('color', '#000');
+                    $(this).css('color', '#ff4941');
+                });
+                $('.menus li').mouseout(function () {
+                    $('.menus li').css('color', '#000');
+                    $('.menus .bg').css('left', '0');
+                    $('.menus li').eq(1).css('color', '#ff4941');
+                });
+            })
+        });
+
+    </script>
+
+{% endblock %}
+{% block content %}
+
+    <div class="px-2" style="margin: auto;width: 1000px">
+
+
+        <div class="d-flex flex-column flex-md-row flex-justify-between border-bottom pb-3 position-relative">
+            <h3>
+                7,264 repository results
+            </h3>
+        </div>
+
+
+        <ul class="repo-list">
+
+            <li class="repo-list-item d-flex flex-column flex-md-row flex-justify-start py-4 public source">
+                <div class="col-12 col-md-8 pr-md-3">
+                    <h3>
+                        <a class="v-align-middle"
+                           data-hydro-click="{&quot;event_type&quot;:&quot;search_result.click&quot;,&quot;payload&quot;:{&quot;page_number&quot;:1,&quot;per_page&quot;:10,&quot;query&quot;:&quot;asa&quot;,&quot;result_position&quot;:1,&quot;click_id&quot;:24328822,&quot;result&quot;:{&quot;id&quot;:24328822,&quot;global_relay_id&quot;:&quot;MDEwOlJlcG9zaXRvcnkyNDMyODgyMg==&quot;,&quot;model_name&quot;:&quot;Repository&quot;,&quot;url&quot;:&quot;https://github.com/electron/asar&quot;},&quot;client_id&quot;:&quot;1285277392.1538357141&quot;,&quot;originating_request_id&quot;:&quot;85F7:14BD:46D9D0A:6B50FE8:5BF7C505&quot;,&quot;originating_url&quot;:&quot;https://github.com/search?utf8=%E2%9C%93&amp;q=asa&amp;type=&quot;,&quot;user_id&quot;:25385662}}"
+                           data-hydro-click-hmac="63f948f122efe8ede8410baf878b82ddab31f179e77d328709a04271e12d7789"
+                           href="/electron/asar">electron/<em>asar</em></a>
+
+                    </h3>
+
+                    <p class="col-12 col-md-9 d-inline-block text-gray mb-2 pr-4">
+                        Simple extensive tar-like archive format with indexing
+                    </p>
+
+                    <div class="topics-row-container col-12 col-md-9 d-inline-flex flex-wrap flex-items-center f6 my-1">
+                        <a href="/topics/asar" class="topic-tag topic-tag-link f6 my-1"
+                           data-ga-click="Topic, search results" data-octo-click="topic_click"
+                           data-octo-dimensions="topic:asar,repository_id:24328822,repository_nwo:electron/<em>asar</em>,repository_public:true,repository_is_fork:false">
+                            asar
+                        </a>
+                        <a href="/topics/pickle" class="topic-tag topic-tag-link f6 my-1"
+                           data-ga-click="Topic, search results" data-octo-click="topic_click"
+                           data-octo-dimensions="topic:pickle,repository_id:24328822,repository_nwo:electron/<em>asar</em>,repository_public:true,repository_is_fork:false">
+                            pickle
+                        </a>
+                        <a href="/topics/javascript" class="topic-tag topic-tag-link f6 my-1"
+                           data-ga-click="Topic, search results" data-octo-click="topic_click"
+                           data-octo-dimensions="topic:javascript,repository_id:24328822,repository_nwo:electron/<em>asar</em>,repository_public:true,repository_is_fork:false">
+                            javascript
+                        </a>
+                        <a href="/topics/electron" class="topic-tag topic-tag-link f6 my-1"
+                           data-ga-click="Topic, search results" data-octo-click="topic_click"
+                           data-octo-dimensions="topic:electron,repository_id:24328822,repository_nwo:electron/<em>asar</em>,repository_public:true,repository_is_fork:false">
+                            electron
+                        </a>
+                        <a href="/topics/chrome" class="topic-tag topic-tag-link f6 my-1"
+                           data-ga-click="Topic, search results" data-octo-click="topic_click"
+                           data-octo-dimensions="topic:chrome,repository_id:24328822,repository_nwo:electron/<em>asar</em>,repository_public:true,repository_is_fork:false">
+                            chrome
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-wrap">
+                        <p class="f6 text-gray mr-3 mb-0 mt-2">
+                            MIT license
+                        </p>
+
+                        <p class="f6 text-gray mr-3 mb-0 mt-2">
+                            Updated
+                            <relative-time datetime="2018-10-09T17:16:05Z" title="2018年10月10日 GMT+8 上午1:16">on 10 Oct
+                            </relative-time>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex-shrink-0 col-6 col-md-4 pt-2 pr-md-3 d-flex">
+                    <div class="text-gray flex-auto min-width-0">
+                        <span class="repo-language-color" style="background-color:#f1e05a;"></span>
+                        JavaScript
+                    </div>
+
+                    <div class="pl-2 pl-md-0 text-right flex-auto min-width-0">
+                        <a class="muted-link" href="/electron/asar/stargazers">
+                            <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1"
+                                 width="14" height="16" role="img">
+                                <path fill-rule="evenodd"
+                                      d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+                            </svg>
+                            1.2k
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <div class="paginate-container codesearch-pagination-container">
+            <div class="d-flex d-md-inline-block pagination" data-pjax="true"><span class="previous_page disabled">Previous</span>
+                <em class="current" data-total-pages="100">1</em> <a rel="next" href="">2</a>
+                <a href="">3</a> <a
+                        href="">4</a> <a
+                        href="">5</a> <span
+                        class="gap">…</span> <a href="">99</a>
+                <a href="">100</a> <a class="next_page" rel="next" href="">Next</a>
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}默认标题{% endblock %}</title>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .menus {
+            width: 750px;
+            margin: 40px auto;
+        }
+
+        .menus ul {
+            width: 750px;
+            border-bottom: 2px solid #009FE9;
+            position: relative;
+            float: left;
+        }
+
+        .menus li {
+            float: left;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .menus li:nth-child(2) {
+            color: #fff;
+        }
+
+        .menus li span {
+            font-size: larger;
+        }
+
+        .menus .bg {
+            width: 150px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+    </style>
+
+    {% block js %}{% endblock %}
+    {% block css %}{% endblock %}
+    <style>
+    a{
+        color: #000000;
+    }
+    </style>
+
+</head>
+
+
+<body>
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+
+
+
+{% endblock %}
+
+</body>
+
+
+</html>

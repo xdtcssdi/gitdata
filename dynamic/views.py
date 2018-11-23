@@ -16,6 +16,10 @@ def index(request):
     return render(request, "index.html")
 
 
+def show_list(request):
+    return render(request, "list.html")
+
+
 def upload(request):
     if request.method == 'POST':  # 获取对象
         obj = request.FILES.get('project_file')
@@ -37,10 +41,6 @@ def upload(request):
         return HttpResponse('OK')
 
     return render(request, 'upload.html')
-
-
-def test(req):
-    return render(req, "test.html")
 
 
 def show(req):
