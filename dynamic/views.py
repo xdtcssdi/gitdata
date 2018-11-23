@@ -18,7 +18,7 @@ def index(request):
 
 def upload(request):
     if request.method == 'POST':  # 获取对象
-        obj = request.FILES.get('excel')
+        obj = request.FILES.get('project_file')
         # print(obj.name)
         t = time.time()
 

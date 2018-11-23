@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'xadmin',
-    'crispy_forms'
+    'crispy_forms',
+    'dynamic'
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")  # E:\day68\static 找到static路径
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+AUTH_USER_MODEL = 'dynamic.User'

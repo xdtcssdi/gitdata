@@ -2,16 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>创建新项目</title>
 </head>
+
+<link crossorigin="anonymous" media="all"
+      integrity="sha512-lLo2nlsdl+bHLu6PGvC2j3wfP45RnK4wKQLiPnCDcuXfU38AiD+JCdMywnF3WbJC1jaxe3lAI6AM4uJuMFBLEw=="
+      rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-08fc49d3bd2694c870ea23d0906f3610.css"/>
+<link crossorigin="anonymous" media="all"
+      integrity="sha512-mv6mDRPrioZTM6DqvWmoRTqzLBRhHXVLHuh4NbZvbWLfjVpC7gqihEHCfY+IR3fRoQ3KD7FLLz422a7iH/HT/g=="
+      rel="stylesheet" href="https://assets-cdn.github.com/assets/github-4d9ab9919c1f80062f9616df3655449f.css"/>
 <body>
 
+{##}
+{#    <form action="" method="post" enctype="multipart/form-data">#}
+{#        {% csrf_token %}#}
+{#        <input type="file" name="excel">#}
+{#        <button type="submit">提交</button>#}
+{#    </form>#}
 
-    <form action="" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        <input type="file" name="excel">
-        <button type="submit">提交</button>
-    </form>
+<form class="js-braintree-encrypt" id="new_repository"
+      action="" accept-charset="UTF-8" method="post" style="margin-left:200px;margin-right: 200px;width:50%">
+    {% csrf_token %}
+    <div class="Subhead">
+        <h2 class="Subhead-heading">Create a new project</h2>
+    </div>
 
+    <div class="owner-reponame clearfix">
+        <auto-check>
+            <dl class="form-group float-left js-with-permission-fields">
+                <dt class="input-label"><label autocapitalize="off" for="repository_name">
+                    Project name</label></dt>
+                <dd>
+                    <input autocapitalize="off" maxlength="100" class="form-control js-repo-name short" size="100"
+                           type="text" name="project_name" id="repository_name" autocomplete="off"
+                           spellcheck="false"></dd>
+            </dl>
+        </auto-check>
+    </div>
+
+    <div class="js-with-permission-fields">
+
+        {#        <p class="my-2">#}
+        {#            描述#}
+        {#        </p>#}
+
+        <!-- description field -->
+        <dl class="form-group">
+            <dt class="input-label">
+                <label for="repository_description">Description</label></dt>
+            <dd>
+                <input class="form-control long" type="text" name="project_description" id="repository_description">
+            </dd>
+        </dl>
+
+
+        <dl class="form-group">
+            <dt class="input-label">
+                <label for="repository_description">FileExecl</label></dt>
+            <dd>
+                <input class="form-control long" type="file" name="project_file" id="repository_description">
+            </dd>
+        </dl>
+
+        <hr/>
+        {##}
+        {#        <hr>#}
+
+        <!-- auto init -->
+
+        {#        <div class="form-checkbox unchecked">#}
+        {#            <label>#}
+        {#                <input name="repository[auto_init]" type="hidden" value="0"><input type="checkbox" value="1"#}
+        {#                                                                                   name="repository[auto_init]"#}
+        {#                                                                                   id="repository_auto_init">#}
+        {#                Initialize this repository with a README#}
+        {#            </label>#}
+        {#            <span class="note">#}
+        {#          This will let you immediately clone the repository to your computer. Skip this step if you’re importing an existing repository.#}
+        {#        </span>#}
+        {#        </div>#}
+
+        <button type="submit" class="btn btn-primary first-in-line" data-disable-with="Creating repository…">
+            创建项目
+        </button>
+    </div>
+</form>
 </body>
 </html>
