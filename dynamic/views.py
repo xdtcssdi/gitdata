@@ -47,8 +47,10 @@ def upload(request):
 
 
 def show(req):
-    f = "\"http://127.0.0.1:8000/media/excels/example.csv\""
+    if req.method == 'GET':
+        name = req.GET.get('name')
+        url = "\"http://127.0.0.1:8000/media/excels/"+name+"\""
 
-    return render(req, "bargraph.html", context={
-        "data": f
-    })
+        return render(req, "bargraph.html", context={
+            "data": url
+        })

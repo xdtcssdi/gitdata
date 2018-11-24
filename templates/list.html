@@ -1,5 +1,5 @@
 {% extends 'head.html' %}
-
+{% load poll_extras %}
 {% block title %}
     项目列表
 {% endblock %}
@@ -58,7 +58,7 @@
                 <li class="repo-list-item d-flex flex-column flex-md-row flex-justify-start py-4 public source">
                     <div class="col-12 col-md-8 pr-md-3">
                         <h3>
-                            <a class="v-align-middle">{{ item.pname }}</a>
+                            <a class="v-align-middle" href="/show?name={{ item.excel|spliexc }}">{{ item.pname }}</a>
 
                         </h3>
 
