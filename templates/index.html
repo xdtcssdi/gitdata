@@ -178,19 +178,19 @@
 
 
     $(function(){
-        $('.menus li').eq(0).css('color','#ff4941');
+        $('.menus li').eq(0).css('color','#1c96ff');
     //无点击效果
     $('.menus li').each(function(){
         $('.menus li').mouseover(function(){
             var index = $(this).index();
             $('.menus .bg').css('left',(index-1)*150+'px');
-            $('.menus li').css('color','#000');
-            $(this).css('color','#ff4941');
+            $('.menus li').css('color','#fff');
+            $(this).css('color','#1c96ff');
         });
         $('.menus li').mouseout(function(){
-            $('.menus li').css('color','#000');
+            $('.menus li').css('color','#fff');
             $('.menus .bg').css('left','0');
-            $('.menus li').eq(0).css('color','#ff4941');
+            $('.menus li').eq(0).css('color','#1c96ff');
         });
     })
 });

@@ -4,11 +4,12 @@ import time
 
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from django.core.paginator import Paginator
 # 首页
 from dynamic.forms import UploadFileForm
 
 # Create your views here.
+from dynamic.models import FileExcel
 
 
 def index(request):
@@ -16,10 +17,19 @@ def index(request):
 
 
 def show_list(request):
-    return render(request, "list.html")
+    size = 10
+    if request.GET.get('page'):
+        page = request.GET['page']
+    else:
+        page = 1
 
-
-
+    p = Paginator(FileExcel.objects.all(), size)
+    current = p.get_page(page)
+    return render(request, "list.html", {"datas": current,
+                                         "current_page":page,
+                                         "page_num": p.num_pages*[0],
+                                         "hasLast": current.has_previous(),
+                                         "hasNext": current.has_next()})
 
 
 def upload(request):
