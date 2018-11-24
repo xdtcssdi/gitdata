@@ -18,7 +18,7 @@
 {#    </form>#}
 {% block content %}
 <form class="js-braintree-encrypt" id="new_repository"
-      action="" accept-charset="UTF-8" method="post" style="margin:auto;margin-top: 200px;width:500px">
+      action="" accept-charset="UTF-8" method="post" style="margin:auto;margin-top: 200px;width:500px" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="Subhead">
         <h2 class="Subhead-heading">Create a new project</h2>
@@ -31,7 +31,7 @@
                     Project name</label></dt>
                 <dd>
                     <input autocapitalize="off" maxlength="100" class="form-control js-repo-name short" size="100"
-                           type="text" name="project_name" id="repository_name" autocomplete="off"
+                           type="text" name="pname" id="repository_name" autocomplete="off"
                            spellcheck="false"></dd>
             </dl>
         </auto-check>
@@ -48,7 +48,7 @@
             <dt class="input-label">
                 <label for="repository_description">Description</label></dt>
             <dd>
-                <input class="form-control long" type="text" name="project_description" id="repository_description">
+                <input class="form-control long" type="text" name="describle" id="repository_description">
             </dd>
         </dl>
 
@@ -57,7 +57,7 @@
             <dt class="input-label">
                 <label for="repository_description">FileExecl</label></dt>
             <dd>
-                <input class="form-control long" type="file" name="project_file" id="repository_description">
+                <input class="form-control long" type="file" name="excel" id="repository_description">
             </dd>
         </dl>
 

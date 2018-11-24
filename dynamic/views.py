@@ -6,8 +6,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # 首页
-from gitdata.settings import BASE_DIR
-
+from dynamic.forms import UploadFileForm
 
 # Create your views here.
 
@@ -20,25 +19,19 @@ def show_list(request):
     return render(request, "list.html")
 
 
+
+
+
 def upload(request):
     if request.method == 'POST':  # 获取对象
-        obj = request.FILES.get('project_file')
-        # print(obj.name)
-        t = time.time()
+        # form = UploadFileForm(request.POST, request.FILES)
+        form = UploadFileForm(request.POST or None, request.FILES or None)
+        if form.is_valid():
+            form.save()
 
-        data = obj.name + str(int(round(t * 1000)))
-
-        tt = hashlib.md5(data.encode(encoding='UTF-8')).hexdigest()
-
-        name = str(tt)[:20] + '.' + obj.name.split('.')[-1]
-
-        f = open(os.path.join(BASE_DIR, 'media', 'excels', name), 'wb')
-
-        for chunk in obj.chunks():
-            f.write(chunk)
-
-        f.close()
-        return HttpResponse('OK')
+            return HttpResponse('OK')
+        else:
+            return HttpResponse("Valid fail")
 
     return render(request, 'upload.html')
 
