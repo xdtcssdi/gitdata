@@ -28,5 +28,8 @@ urlpatterns = [
     url('upload/', views.upload),
     url('show/', views.show),
     url('list/', views.show_list, name='list'),
+    url('login/', views.login, name='login'),
+    url('login_register/', views.login_register, name='login_register'),
+    url('register/', views.register, name='register'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
 ]

@@ -1,0 +1,140 @@
+{% extends 'head.html' %}
+{% block jss %}
+    <script src="/static/js/login_register.js"></script>
+    <script src="/static/js/jquery-2.1.1.min.js"></script>
+    <script>
+
+        $.ajaxSetup({
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'},
+        });
+
+        function login() {
+            let username = $('#login_username').val();
+            let password = $('#login_register').val();
+            if (username == '' || password == ''){
+                alert("用户名或密码不可为空");
+                return;
+            }
+
+            $.ajax({
+                url:{% url "login" %},
+                data: {'username': username, 'password': password},
+                method: 'post',
+                dataType: "text",
+                success: function (result) {
+                    console.log(result);
+                    if (result == 'success') {
+                        if (confirm("登陆成功是否跳转到上一页，否则跳转到首页")) {
+                            history.go(-1);
+                        } else {
+                            self.location = '/';
+                        }
+                    }else{
+                        alert("登录失败，请重试");
+                    }
+                },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
+
+        }
+
+        function register() {
+            let username = $('#register_username').val();
+            let email = $('#register_email').val();
+            let password1= $('#register_password1').val();
+            let password2= $('#register_password2').val();
+
+            if (username == '' || password1==''){
+                alert("用户名和密码不可为空");
+                return;
+            }
+            if(password1!=password2){
+                alert("两次密码不一致");
+                return;
+            }
+
+            $.ajax({
+                url:{% url "register" %},
+                data: {'username': username,'email':email ,'password': password1},
+                method: 'post',
+                dataType: "text",
+                success: function (result) {
+                    console.log(result);
+                    if (result == 'success') {
+                        if (confirm("注册成功,请重新登录")) {
+                            history.go(-1);
+                        } else {
+                            self.location = '/';
+                        }
+                    }else{
+                        alert("注册失败，请重试");
+                    }
+                },
+                error: function (result) {
+                    console.log(result);
+                }
+            });
+
+            console.log("register");
+        }
+
+
+    </script>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="/static/css/slider.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="/static/css/login_register.css">
+{% endblock %}
+{% block content %}
+
+    <div class="cotn_principal">
+        <div class="cont_centrar">
+            <div class="cont_login">
+                <div class="cont_info_log_sign_up">
+                    <div class="col_md_login">
+                        <div class="cont_ba_opcitiy">
+                            <h2>登录</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <button class="btn_login" onclick="cambiar_login()">登录</button>
+                        </div>
+                    </div>
+                    <div class="col_md_sign_up">
+                        <div class="cont_ba_opcitiy">
+                            <h2>注册</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                            <button class="btn_sign_up" onclick="cambiar_sign_up()">注册</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont_back_info">
+                    <div class="cont_img_back_grey"><img src="/static/images/po.jpg" alt=""/></div>
+                </div>
+                <div class="cont_forms">
+                    <div class="cont_img_back_"><img src="/static/images/po.jpg" alt=""/></div>
+                    <div class="cont_form_login"><a href="#" onclick="ocultar_login_sign_up()"><i
+                            class="material-icons">&#xE5C4;</i></a>
+                        <h2>LOGIN</h2>
+                        <input id="login_username" type="text" placeholder="username" name="username"/>
+                        <input id="login_register" type="password" placeholder="password" name="password"/>
+                        <button class="btn_login" onclick="login()">登录</button>
+                    </div>
+                    <div class="cont_form_sign_up"><a href="#" onclick="ocultar_login_sign_up()"><i
+                            class="material-icons">&#xE5C4;</i></a>
+                        <h2>SIGN UP</h2>
+                        <input type="text" id="register_username" placeholder="User" name="username"/>
+                        <input type="text" id="register_email" placeholder="Email" name="email"/>
+                        <input type="password" id="register_password1" placeholder="Password" name="password"/>
+                        <input type="password" id="register_password2" placeholder="Confirm Password"/>
+                        <button class="btn_sign_up" onclick="register()">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
