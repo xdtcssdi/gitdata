@@ -21,7 +21,7 @@ def show_list(request):
     else:
         page = 1
 
-    p = Paginator(FileExcel.objects.all(), size)
+    p = Paginator(FileExcel.objects.order_by('-uploadtime').all(), size)
     current = p.get_page(page)
     return render(request, "list.html", {"datas": current,
                                          "current_page": page,
@@ -31,15 +31,16 @@ def show_list(request):
 
 
 def upload(request):
+    if not request.user.is_authenticated:
+        return redirect("/login_register")
     if request.method == 'POST':  # 获取对象
-        # form = UploadFileForm(request.POST, request.FILES)
-        form = UploadFileForm(request.POST or None, request.FILES or None)
-        if form.is_valid():
-            form.save()
+        f = FileExcel(user=request.user, describle=request.POST['describle'],
+                      excel=request.FILES["excel"],
+                      pname=request.POST['pname'])
 
-            return HttpResponse('OK')
-        else:
-            return HttpResponse("Valid fail")
+        f.save()
+
+        return redirect("list")
 
     return render(request, 'upload.html')
 
@@ -68,7 +69,7 @@ def register(request):
         email = request.POST.get('email', '')
         password = request.POST.get('password', '')
 
-        result = User.objects.create_user(username=username,email=email,password=password);
+        result = User.objects.create_user(username=username, email=email, password=password);
 
         if result:
             return HttpResponse("success")

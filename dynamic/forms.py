@@ -6,10 +6,12 @@ from dynamic.models import FileExcel, User
 class UploadFileForm(forms.ModelForm):
     class Meta:
         model = FileExcel
-        fields = ['pname', 'describle', 'excel']
+        fields = ['pname', 'describle', 'excel', 'user']
+        exclude = ['user']
         labels = {
             'pname': '项目名',
-            'describle': '邮箱'
+            'describle': '邮箱',
+            'user': '上传人'
         }
 
 

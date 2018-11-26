@@ -36,7 +36,7 @@ class FileExcel(models.Model):
     describle = models.TextField(blank=True, null=True)
     uploadtime = models.DateTimeField(default=timezone.now)
     comments = models.ForeignKey("Comments", null=True, on_delete=models.CASCADE)
-    user = models.OneToOneField("User", null=True, on_delete=models.CASCADE)
+    user = models.ForeignKey("User", null=True, on_delete=models.CASCADE)
     excel = models.FileField(upload_to=handle_uploaded_file)
     downtimes = models.IntegerField(default=0)
     hinttimes = models.IntegerField(default=0)
