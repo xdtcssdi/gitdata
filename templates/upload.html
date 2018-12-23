@@ -10,12 +10,6 @@
       rel="stylesheet" href="https://assets-cdn.github.com/assets/github-4d9ab9919c1f80062f9616df3655449f.css"/>
 {% endblock %}
 
-{##}
-{#    <form action="" method="post" enctype="multipart/form-data">#}
-{#        {% csrf_token %}#}
-{#        <input type="file" name="excel">#}
-{#        <button type="submit">提交</button>#}
-{#    </form>#}
 {% block content %}
 <form class="js-braintree-encrypt" id="new_repository"
       action="" accept-charset="UTF-8" method="post" style="margin:auto;margin-top: 200px;width:500px" enctype="multipart/form-data">
@@ -39,11 +33,6 @@
 
     <div class="js-with-permission-fields">
 
-        {#        <p class="my-2">#}
-        {#            描述#}
-        {#        </p>#}
-
-        <!-- description field -->
         <dl class="form-group">
             <dt class="input-label">
                 <label for="repository_description">Description</label></dt>
@@ -62,22 +51,7 @@
         </dl>
 
         <hr/>
-        {##}
-        {#        <hr>#}
 
-        <!-- auto init -->
-
-        {#        <div class="form-checkbox unchecked">#}
-        {#            <label>#}
-        {#                <input name="repository[auto_init]" type="hidden" value="0"><input type="checkbox" value="1"#}
-        {#                                                                                   name="repository[auto_init]"#}
-        {#                                                                                   id="repository_auto_init">#}
-        {#                Initialize this repository with a README#}
-        {#            </label>#}
-        {#            <span class="note">#}
-        {#          This will let you immediately clone the repository to your computer. Skip this step if you’re importing an existing repository.#}
-        {#        </span>#}
-        {#        </div>#}
 
         <button type="submit" class="btn btn-primary first-in-line" data-disable-with="Creating repository…">
             创建项目

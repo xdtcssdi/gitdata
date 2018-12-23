@@ -27,7 +27,7 @@
 
 {% block head %}
     <div class="menus">
-        <ul>
+
             <div class="bg"></div>
             <a href="{% url "index" %}">
                 <li><span>首页</span></li>
@@ -37,6 +37,7 @@
             </a>
             <li><span>话题</span></li>
             <li><span>市场</span></li>
+            <a href="{% url "spider_show" %}"><li ><span>图片采集</span></li></a>
             <li><span>个人</span></li>
         </ul>
 

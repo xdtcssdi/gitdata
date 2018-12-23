@@ -11,7 +11,6 @@ class User(AbstractUser):
     comments = models.ForeignKey("Comments", null=True, on_delete=models.CASCADE, related_name='user_comments')
     files = models.ForeignKey("FileExcel", null=True, on_delete=models.CASCADE, related_name='user_files')
 
-
 class Comments(models.Model):
     cid = models.AutoField(primary_key=True)
     content = models.TextField(blank=True, null=True)

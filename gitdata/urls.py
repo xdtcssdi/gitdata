@@ -15,7 +15,7 @@ Including another URLconf
 """
 import xadmin
 from django.conf.urls import url
-from django.urls import path
+from django.urls import path, include
 from django.views.static import serve
 
 from dynamic import views
@@ -26,10 +26,11 @@ urlpatterns = [
     path('xadmin/', xadmin.site.urls),
     url('^$', views.index, name='index'),
     url('upload/', views.upload),
-    url('show/', views.show),
+    url(r'^show/', views.show),
     url('list/', views.show_list, name='list'),
     url('login/', views.login, name='login'),
     url('login_register/', views.login_register, name='login_register'),
     url('register/', views.register, name='register'),
+    url('spider/', include("spider.urls"), name='spider'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
 ]

@@ -1,0 +1,45 @@
+{% extends 'head.html' %}
+{% load poll_extras %}
+{% block title %}
+    项目列表
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+
+        {% for item in datas %}
+            <div class="col-xs-6 col-sm-3">
+            
+            <img src="{{ item.img }}">
+            
+            </div>
+
+        {% endfor %}
+    </div>
+    
+    <div class="paginate-container codesearch-pagination-container">
+        <div class="d-flex d-md-inline-block pagination" data-pjax="true">
+            {% if hasLast %}
+                <a href="?page={{ current_page|add:-1 }}">Previous</a>
+            {% endif %}
+
+            {% for i in page_num %}
+
+
+                {% if current_page == forloop.counter %}
+                    <em class="current" data-total-pages="100">{{ forloop.counter }}</em>
+                {% else %}
+                    <a href="?page={{ forloop.counter }}">{{ forloop.counter }}</a>
+                {% endif %}
+
+            {% endfor %}
+            {% if hasNext %}
+                <a class="next_page" rel="next" href="?page={{ current_page|add:1 }}">Next</a>
+            {% endif %}
+
+
+        </div>
+    </div>
+
+
+{% endblock %}
