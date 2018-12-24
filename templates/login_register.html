@@ -71,7 +71,10 @@
                         else {
                             self.location = '/';
                         }
-                    } else {
+                    } else if (result == "nounique") {
+                        alert("该用户已经被注册")
+                    }
+                    else {
                         alert("注册失败，请重试");
                     }
                 },

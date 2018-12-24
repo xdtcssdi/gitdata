@@ -21,7 +21,8 @@
     <div class="bar">
         <div class="w1200">
             <span class="l">GitData<font>用户中心</font></span>
-            <span class="r"><a href="#"><i class="icon iconfont icon-dianyuan"></i>退出</a></span>
+            <span class="r"><a style="color:#ffffff;" href="{% url 'logout' %}"><i
+                    class="icon iconfont icon-dianyuan"></i>退出</a></span>
         </div>
     </div>
     <div class="user-info">
@@ -134,7 +135,6 @@
 </div>
 
 <script>
-
     let modifyuserinfo = function () {
         let username = $("#uname").val();
         let password = $("#password").val();

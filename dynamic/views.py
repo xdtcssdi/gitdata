@@ -57,16 +57,16 @@ def login(request):
         result = User.objects.get(username=username)
         user = auth.authenticate(username=username, password=password)
         print(result)
-        if result is not None:
-            if not user:
-                return HttpResponse("noactive")
+        if user:
             if user.is_active:
                 auth.login(request, user)
                 return HttpResponse("success")
-
+            else:
+                return HttpResponse("noactive")
         else:
             return HttpResponse("fail")
-        # return HttpResponse("验证失败")
+    # return HttpResponse("验证失败")
+
     else:
         return HttpResponse("method错误")
 
@@ -76,13 +76,17 @@ def register(request):
         username = request.POST.get('username', '')
         email = request.POST.get('email', '')
         password = request.POST.get('password', '')
+        res = User.objects.filter(username=username)
+        if res:
+            return HttpResponse("nounique")
         result = User.objects.create_user(username=username, email=email, password=password)
 
         if result:
             result.is_active = False
+            result.save()
             randomCode = get_random_str()
             CheckCode.objects.create(user=result, code=randomCode)
-            send_mail('验证您的电子邮件', '您已经注册账户成功，现在需要您访问如下链接：http://localhost:8000/check?code=' + randomCode,
+            send_mail('验证您的用户信息', '您已经注册账户成功，现在需要您访问如下链接：http://localhost:8000/check?code=' + randomCode,
                       settings.DEFAULT_FROM_EMAIL, [email],
                       fail_silently=False)
             return HttpResponse("success")
@@ -127,15 +131,10 @@ def userinfo(req):
     return render(req, 'userinfo.html', {'user': req.user})
 
 
-#
-# def logout(req):
-#     if req.user.is_authenticated:
-#         del req.session['username']
-#         return render(req, 'login_register.html')
-
-
-def jihuo(req):
-    return render(req, "jihuo.html")
+def logout(req):
+    if req.user.is_authenticated:
+        auth.logout(req)
+        return redirect("login_register")
 
 
 def check(request):
