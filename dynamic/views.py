@@ -59,6 +59,7 @@ def login(request):
         print(result)
         if user:
             if user.is_active:
+                # FIXME:判断有问题
                 auth.login(request, user)
                 return HttpResponse("success")
             else:
