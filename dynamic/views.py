@@ -3,7 +3,7 @@ from django.core.paginator import Paginator
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
-from dynamic.forms import UploadFileForm, LoginForm
+from dynamic.forms import LoginForm
 # Create your views here.
 from dynamic.models import FileExcel, User
 
@@ -52,10 +52,16 @@ def login(request):
         # if form.is_valid():
         username = request.POST.get('username', '')
         password = request.POST.get('password', '')
+        result = User.objects.get(username=username)
         user = auth.authenticate(username=username, password=password)
-        if user is not None and user.is_active:
-            auth.login(request, user)
-            return HttpResponse("success")
+        print(result)
+        if result is not None:
+            if not user:
+                return HttpResponse("noactive")
+            if user.is_active:
+                auth.login(request, user)
+                return HttpResponse("success")
+
         else:
             return HttpResponse("fail")
         # return HttpResponse("验证失败")
@@ -68,9 +74,7 @@ def register(request):
         username = request.POST.get('username', '')
         email = request.POST.get('email', '')
         password = request.POST.get('password', '')
-
-        result = User.objects.create_user(username=username, email=email, password=password);
-
+        result = User.objects.create_user(username=username, email=email, password=password)
         if result:
             return HttpResponse("success")
         else:
@@ -97,3 +101,14 @@ def login_register(req):
     lf = LoginForm()
     # rf = RegisterForm()
     return render(req, "login_register.html", {'lf': lf})
+
+
+#
+# def logout(req):
+#     if req.user.is_authenticated:
+#         del req.session['username']
+#         return render(req, 'login_register.html')
+
+
+def jihuo(req):
+    return render(req, "jihuo.html")

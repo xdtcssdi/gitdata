@@ -1,15 +1,16 @@
-from django.contrib.auth.models import AbstractUser
-from django.db import models
-
-# Create your models here.
-from django.utils import timezone
 import hashlib
-import os
 import time
+
+from django.contrib.auth.models import AbstractUser
+# Create your models here.
+from django.db import models
+from django.utils import timezone
+
 
 class User(AbstractUser):
     comments = models.ForeignKey("Comments", null=True, on_delete=models.CASCADE, related_name='user_comments')
     files = models.ForeignKey("FileExcel", null=True, on_delete=models.CASCADE, related_name='user_files')
+
 
 class Comments(models.Model):
     cid = models.AutoField(primary_key=True)
@@ -26,7 +27,7 @@ def handle_uploaded_file(instance, filename):
 
     name = str(tt)[:20] + '.' + filename.split('.')[-1]
 
-    return 'excels/'+name
+    return 'excels/' + name
 
 
 class FileExcel(models.Model):

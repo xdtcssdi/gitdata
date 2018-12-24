@@ -32,5 +32,6 @@ urlpatterns = [
     url('login_register/', views.login_register, name='login_register'),
     url('register/', views.register, name='register'),
     url('spider/', include("spider.urls"), name='spider'),
-    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    url(r'jihuo/', views.jihuo, name='jihuo')
 ]
