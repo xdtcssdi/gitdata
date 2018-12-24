@@ -12,6 +12,12 @@ class User(AbstractUser):
     files = models.ForeignKey("FileExcel", null=True, on_delete=models.CASCADE, related_name='user_files')
 
 
+class CheckCode(models.Model):
+    id = models.AutoField(primary_key=True)
+    user = models.ForeignKey("User", null=True, on_delete=models.CASCADE)
+    code = models.CharField(max_length=100)
+
+
 class Comments(models.Model):
     cid = models.AutoField(primary_key=True)
     content = models.TextField(blank=True, null=True)

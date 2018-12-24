@@ -1,11 +1,13 @@
 from django.contrib import auth
+from django.core.mail import send_mail
 from django.core.paginator import Paginator
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 from dynamic.forms import LoginForm
 # Create your views here.
-from dynamic.models import FileExcel, User
+from dynamic.models import FileExcel, User, CheckCode
+from gitdata import settings
 
 
 def index(request):
@@ -75,13 +77,32 @@ def register(request):
         email = request.POST.get('email', '')
         password = request.POST.get('password', '')
         result = User.objects.create_user(username=username, email=email, password=password)
+
         if result:
+            result.is_active = False
+            randomCode = get_random_str()
+            CheckCode.objects.create(user=result, code=randomCode)
+            send_mail('验证您的电子邮件', '您已经注册账户成功，现在需要您访问如下链接：http://localhost:8000/check?code=' + randomCode,
+                      settings.DEFAULT_FROM_EMAIL, [email],
+                      fail_silently=False)
             return HttpResponse("success")
         else:
             return HttpResponse("fail")
 
     else:
         return HttpResponse("method错误")
+
+
+import uuid
+import hashlib
+
+
+def get_random_str():
+    uuid_val = uuid.uuid4()
+    uuid_str = str(uuid_val).encode("utf-8")
+    md5 = hashlib.md5()
+    md5.update(uuid_str)
+    return md5.hexdigest()
 
 
 def show(req):
@@ -103,7 +124,7 @@ def login_register(req):
 
 
 def userinfo(req):
-    return render(req, 'userinfo.html')
+    return render(req, 'userinfo.html', {'user': req.user})
 
 
 #
@@ -115,3 +136,17 @@ def userinfo(req):
 
 def jihuo(req):
     return render(req, "jihuo.html")
+
+
+def check(request):
+    code = request.GET['code']
+
+    cc = CheckCode.objects.get(code=code)
+
+    if cc:
+        cc.user.is_active = True
+        cc.user.save()
+        cc.delete()
+    else:
+        return HttpResponse("验证失败")
+    return HttpResponse("成功")
