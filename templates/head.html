@@ -21,24 +21,28 @@
     <link rel="stylesheet" type="text/css" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/slider.css">
     <link rel="stylesheet" href="/static/css/main.css">
-{% block csss %}
+    {% block csss %}
     {% endblock %}
 {% endblock %}
 
 {% block head %}
     <div class="menus">
 
-            <div class="bg"></div>
-            <a href="{% url "index" %}">
-                <li><span>首页</span></li>
-            </a>
-            <a href="{% url "list" %}">
-                <li><span>排行</span></li>
-            </a>
-            <li><span>话题</span></li>
-            <li><span>市场</span></li>
-            <a href="{% url "spider_show" %}"><li ><span>图片采集</span></li></a>
+        <div class="bg"></div>
+        <a href="{% url "index" %}">
+            <li><span>首页</span></li>
+        </a>
+        <a href="{% url "list" %}">
+            <li><span>排行</span></li>
+        </a>
+        <li><span>话题</span></li>
+        <li><span>市场</span></li>
+        <a href="{% url "spider_show" %}">
+            <li><span>图片采集</span></li>
+        </a>
+        <a href="{% url "userinfo" %}">
             <li><span>个人</span></li>
+        </a>
         <div class="clear"></div>
     </div>
 {% endblock %}

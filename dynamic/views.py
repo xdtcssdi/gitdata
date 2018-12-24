@@ -103,6 +103,10 @@ def login_register(req):
     return render(req, "login_register.html", {'lf': lf})
 
 
+def userinfo(req):
+    return render(req, 'userinfo.html')
+
+
 #
 # def logout(req):
 #     if req.user.is_authenticated:
