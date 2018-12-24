@@ -129,9 +129,49 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                <button type="button" class="btn btn-primary">提交更改</button>
+                <button type="button" class="btn btn-primary" onclick="modifyuserinfo()">提交更改</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>
+
+<script>
+
+    let modifyuserinfo = function () {
+        let username = $("#uname").val();
+        let password = $("#password").val();
+        let newpassword = $("#newpassword").val();
+        let email = $("#email").val();
+        let filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (filter.test(email)) {
+            if (username != "" && password != "" && newpassword != "" && email != "") {
+                let data = {"username": username, "password": password, "newpassword": newpassword, "email": email};
+                $.ajax({
+                    url: "",
+                    type: "post",
+                    data: data,
+                    dataType: 'text',
+
+                    success: function (res) {
+                        if (res.equal("success")) {
+
+                        }
+
+                    },
+                    error: function (res) {
+
+                        if (res.equal("error")) {
+
+                        }
+
+                    }
+
+                })
+            }
+        }
+
+
+    }
+
+</script>
 </html>
