@@ -97,7 +97,6 @@ def show(req):
 def login_register(req):
     if req.user.is_authenticated:
         return redirect("/")
-
     lf = LoginForm()
     # rf = RegisterForm()
     return render(req, "login_register.html", {'lf': lf})
