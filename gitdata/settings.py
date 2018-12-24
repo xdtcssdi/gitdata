@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'dynamic',
     'spider',
+    'celery_tasks',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,9 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = 'mumin_g1208@163.com'
 EMAIL_HOST_PASSWORD = '5201314MuminG'
 DEFAULT_FROM_EMAIL = 'muming<mumin_g1208@163.com>'
+import djcelery
+
+# 在INSTALLED_APPS中注册djcelery
+djcelery.setup_loader()
+BROKER_URL = 'redis://127.0.0.1:6379/3'  # redis所在的主机ip和端口号最后面是数据库
+CELERY_IMPORTS = ('celery_tasks.task')  # 设置路径让celery能找到tasks文件

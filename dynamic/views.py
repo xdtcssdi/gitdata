@@ -1,13 +1,12 @@
 from django.contrib import auth
-from django.core.mail import send_mail
 from django.core.paginator import Paginator
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
+from celery_tasks.task import send_msg
 from dynamic.forms import LoginForm
 # Create your views here.
 from dynamic.models import FileExcel, User, CheckCode
-from gitdata import settings
 
 
 def index(request):
@@ -87,9 +86,10 @@ def register(request):
             result.save()
             randomCode = get_random_str()
             CheckCode.objects.create(user=result, code=randomCode)
-            send_mail('验证您的用户信息', '您已经注册账户成功，现在需要您访问如下链接：http://localhost:8000/check?code=' + randomCode,
-                      settings.DEFAULT_FROM_EMAIL, [email],
-                      fail_silently=False)
+            send_msg(email, randomCode)
+            # send_mail('验证您的用户信息', '您已经注册账户成功，现在需要您访问如下链接：http://localhost:8000/check?code=' + randomCode,
+            #           settings.DEFAULT_FROM_EMAIL, [email],
+            #           fail_silently=False)
             return HttpResponse("success")
         else:
             return HttpResponse("fail")
