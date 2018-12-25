@@ -127,6 +127,8 @@ def login_register(req):
 
 
 def userinfo(request):
+    if not request.user.is_authenticated:
+        return redirect("/login_register")
     size = 10
     if request.POST.get('page'):
         page = request.POST['page']
