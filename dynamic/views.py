@@ -128,8 +128,38 @@ def login_register(req):
     return render(req, "login_register.html", {'lf': lf})
 
 
-def userinfo(req):
-    return render(req, 'userinfo.html', {'user': req.user})
+def userinfo(request):
+    size = 10
+    if request.POST.get('page'):
+        page = request.POST['page']
+    else:
+        page = 1
+
+    p = Paginator(FileExcel.objects.filter(user=request.user).order_by('-uploadtime').all(), size)
+    current = p.get_page(page)
+    return render(request, "userinfo.html", {'user': request.user, "datas": current,
+                                             "current_page": page,
+                                             "page_num": p.num_pages * [0],
+                                             "hasLast": current.has_previous(),
+                                             "hasNext": current.has_next()})
+
+
+def modfiyuserinfo(req):
+    if req.method == 'POST':
+        newname = req.POST.get('username')
+        password = req.POST.get('password')
+        newpassword = req.POST.get('newpassword')
+        newemail = req.POST.get('email')
+        print(newname)
+        user = auth.authenticate(username=req.user.username, password=password)
+        if user:
+            user.username = newname
+            user.set_password(newpassword)
+            user.email = newemail
+            user.save()
+            auth.login(req, user=user)
+            return HttpResponse("success")
+        return HttpResponse("fail")
 
 
 def logout(req):
@@ -140,7 +170,6 @@ def logout(req):
 
 def check(request):
     code = request.GET['code']
-
     cc = CheckCode.objects.get(code=code)
 
     if cc:

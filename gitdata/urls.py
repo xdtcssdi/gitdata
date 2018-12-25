@@ -34,6 +34,7 @@ urlpatterns = [
     url('spider/', include("spider.urls"), name='spider'),
     url('check/', views.check, name='check'),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
-    url(r'userinfo', views.userinfo, name='userinfo'),
+    url(r'^userinfo', views.userinfo, name='userinfo'),
+    url(r'^modfiyuserinfo', views.modfiyuserinfo, name='modfiyuserinfo'),
     url(r'logout', views.logout, name='logout')
 ]
