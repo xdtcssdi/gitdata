@@ -23,16 +23,18 @@
                 dataType: "text",
                 success: function (result) {
                     console.log(result);
-                    if (result == 'success') {
+                    if (result === 'success') {
                         if (confirm("登陆成功是否跳转到上一页，否则跳转到首页")) {
                             history.go(-1);
                         } else {
                             self.location = '/';
                         }
-                    } else if (result == 'noactive') {
+                    } else if (result === 'nofound') {
+                        alert("用户不存在请先注册");
+                    } else if (result === 'noactive') {
                         alert("用户未激活，请确认邮件")
-                    } else {
-                        alert("登录失败，请重试");
+                    } else if(result === 'fail'){
+                        alert("用户名或密码错误，请重试");
                     }
                 },
                 error: function (result) {
