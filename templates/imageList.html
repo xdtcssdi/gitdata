@@ -3,20 +3,51 @@
 {% block title %}
     项目列表
 {% endblock %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+    <link rel="stylesheet" href="/static/css/imgmain.css"/>
+    <!--[if lte IE 9]><link rel="stylesheet" href="/static/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/static/css/ie8.css" /><![endif]-->
+    <link crossorigin="anonymous" media="all"
+          integrity="sha512-lLo2nlsdl+bHLu6PGvC2j3wfP45RnK4wKQLiPnCDcuXfU38AiD+JCdMywnF3WbJC1jaxe3lAI6AM4uJuMFBLEw=="
+          rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-08fc49d3bd2694c870ea23d0906f3610.css"/>
+    <link crossorigin="anonymous" media="all"
+          integrity="sha512-mv6mDRPrioZTM6DqvWmoRTqzLBRhHXVLHuh4NbZvbWLfjVpC7gqihEHCfY+IR3fRoQ3KD7FLLz422a7iH/HT/g=="
+          rel="stylesheet" href="https://assets-cdn.github.com/assets/github-4d9ab9919c1f80062f9616df3655449f.css"/>
+
+{% endblock %}
+{% block js %}
+
+    <!--[if lte IE 8]><script src="/static/js/ie/html5shiv.js"></script><![endif]-->
+    <script src="/static/js/jquery-2.2.4.min%20.js"></script>
+    <script src="/static/js/jquery.poptrox.min.js"></script>
+    <script src="/static/js/skel.min.js"></script>
+    <script src="/static/js/util.js"></script>
+    <script src="/static/js/libs/bootstrap.min.js" type="text/javascript"></script>
+    <!--[if lte IE 8]><script src="/static/js/ie/respond.min.js"></script><![endif]-->
+    <script src="/static/js/main.js"></script>
+
+{% endblock %}
 
 {% block content %}
-    <div class="row">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <div id="main">
 
-        {% for item in datas %}
-            <div class="col-xs-6 col-sm-3">
-            
-            <img src="{{ item.img }}">
-            
-            </div>
+            {% for item in datas %}
+                <article class="thumb">
+                    <a href="{{ item.img }}" class="image"><img src="{{ item.img }}" alt=""/></a>
 
-        {% endfor %}
+                </article>
+
+            {% endfor %}
+
+
+        </div>
+
     </div>
-    
+
     <div class="paginate-container codesearch-pagination-container">
         <div class="d-flex d-md-inline-block pagination" data-pjax="true">
             {% if hasLast %}
@@ -24,14 +55,7 @@
             {% endif %}
 
             {% for i in page_num %}
-
-
-                {% if current_page == forloop.counter %}
-                    <em class="current" data-total-pages="100">{{ forloop.counter }}</em>
-                {% else %}
-                    <a href="?page={{ forloop.counter }}">{{ forloop.counter }}</a>
-                {% endif %}
-
+                <a href="?page={{ current_page|add:forloop.counter0 }}">{{ current_page|add:forloop.counter0 }}</a>
             {% endfor %}
             {% if hasNext %}
                 <a class="next_page" rel="next" href="?page={{ current_page|add:1 }}">Next</a>
@@ -40,6 +64,4 @@
 
         </div>
     </div>
-
-
 {% endblock %}

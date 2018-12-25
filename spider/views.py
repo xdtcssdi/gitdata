@@ -15,7 +15,7 @@ def show(request):
         return redirect("/login_register")
     size = 16
     if request.GET.get('page'):
-        page = request.GET['page']
+        page = int(request.GET['page'])
     else:
         page = 1
 
@@ -23,7 +23,7 @@ def show(request):
     current = p.get_page(page)
     return render(request, "imageList.html", {"datas": current,
                                               "current_page": page,
-                                              "page_num": p.num_pages * [0],
+                                              "page_num": range(page, page + 11),
                                               "hasLast": current.has_previous(),
                                               "hasNext": current.has_next()})
 

@@ -104,14 +104,7 @@
                 {% endif %}
 
                 {% for i in page_num %}
-
-
-                    {% if current_page == forloop.counter %}
-                        <em class="current" data-total-pages="100">{{ forloop.counter }}</em>
-                    {% else %}
-                        <a href="?page={{ forloop.counter }}">{{ forloop.counter }}</a>
-                    {% endif %}
-
+                    <a href="?page={{ forloop.counter }}">{{ forloop.counter }}</a>
                 {% endfor %}
                 {% if hasNext %}
                     <a class="next_page" rel="next" href="?page={{ current_page|add:1 }}">Next</a>
