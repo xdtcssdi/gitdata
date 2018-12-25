@@ -48,24 +48,22 @@ def upload(request):
 
 def login(request):
     if request.method == 'POST':
-        form = LoginForm(request.POST or None)
-        print(form.errors)
-        # if form.is_valid():
         username = request.POST.get('username', '')
         password = request.POST.get('password', '')
-        result = User.objects.get(username=username)
+        result = User.objects.filter(username=username)
+        if not result:
+            return HttpResponse("nofound")
+        elif not result[0].is_active:
+            return HttpResponse("noactive")
+
         user = auth.authenticate(username=username, password=password)
-        print(result)
+
         if user:
             if user.is_active:
-                # FIXME:判断有问题
                 auth.login(request, user)
                 return HttpResponse("success")
-            else:
-                return HttpResponse("noactive")
         else:
             return HttpResponse("fail")
-    # return HttpResponse("验证失败")
 
     else:
         return HttpResponse("method错误")
