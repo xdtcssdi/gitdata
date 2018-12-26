@@ -65,9 +65,23 @@
                     <i class="icon iconfont icon-lingdang"></i>个人项目
                 </a>
             </li>
-            <a href="{% url "upload" %}">
-                <button class="btn btn-primary btn-lg">上传文件</button>
-            </a>
+
+            <li>
+                <a href="{% url "upload" %}" class="active">
+                    <i class="icon iconfont icon-wenda"></i>上传文件
+                </a>
+            </li>
+            <li>
+                <a href="{% url "index" %}" class="active">
+                    <i class="icon iconfont icon-fangzidichan"></i>返回主页
+                </a>
+            </li>
+            <li>
+                <a href="{% url "logout" %}" class="active">
+                    <i class="icon iconfont icon-dianyuan"></i>注销
+                </a>
+            </li>
+
         </ul>
 
     </div>
